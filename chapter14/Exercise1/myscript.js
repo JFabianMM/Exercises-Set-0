@@ -5,35 +5,38 @@
 //    Dom manipulation through user input
 //    Estimated Time: 4 hr.
 
-function test() {
-   var element = document.createElement("div");
-   element.appendChild(document.createTextNode(''));
-   document.getElementById('container').appendChild(element);
+function addElements(fra,num) {
+   let fragment=fra;
+   let numberGrid=num;
+   for (let i=0; i<numberGrid; i++){
+      var elementDiv = document.createElement("div");
+      elementDiv.appendChild(document.createTextNode(''));
+      fragment.appendChild(elementDiv);
+   }
+  return fragment 
 }
 
-function deleteChild() {
-   var e = document.getElementById('container');  
-   //e.firstElementChild can be used.
-   var child = e.lastElementChild; 
+function deleteChild(ele) {
+   element=ele;
+   var child = element.lastElementChild; 
    while (child) {
-       e.removeChild(child);
-       child = e.lastElementChild;
+       element.removeChild(child);
+       child = element.lastElementChild;
    }
 }
 
-function myFunction() {
-   deleteChild();
-   let nn= document.getElementById("N").value; 
-   let mm= document.getElementById("M").value;
-   let mn = nn * mm;
-   for (let i=0; i<mn; i++){
-      test()
-   }
+function setGrid() {
+   var element = document.getElementById('container');
+   fragment = document.createDocumentFragment();
+   let numberColumns= document.getElementById("N").value; 
+   let numberRows= document.getElementById("M").value;
+   let numberGrid = numberColumns * numberRows;
+   deleteChild(element);
+   fragment=addElements(fragment,numberGrid)
+   element.appendChild(fragment);
 
-   const element = document.getElementById('container');
-   //let numb = element.childNodes.length;
-   let aa=100/mm;
-   for (let j=0; j<mn; j++){
+   let aa=100/numberRows;
+   for (let j=0; j<numberGrid; j++){
       element.childNodes[j+1].style.flexBasis = `${aa}%`;    
    }
  }
