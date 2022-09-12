@@ -5,59 +5,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Baja Gallery</title>
+    <title>Gallery</title>
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body onload="myFunction3()">
-    
-    <div class="wrapper">
+<body> 
+    <div class="wrapper" id="wrapper" >     
+    </div> 
 
-    </div>
-
-    <template id="template1">
-        <article class="article1" onclick="myFunction2()">
-            <div> 
-            <img class="img1" src="img/e.jpg" alt="Baja Info Article.">
-            </div>
-            <div>
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-            </div>
-        </article>
-        <article class="article1" onclick="myFunction2()">
-            <div> 
-            <img class="img1" src="img/f.jpg" alt="Baja Info Article.">
-            </div>
-            <div>
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-            </div>
-        </article>
+    <template id="template1" >
+        <a href="#template21">
+            <article class="article1" id="article1" onclick="toTemplate21()">
+                <div> 
+                     <h5></h5><img class="img1" id="img1" src="#" alt="Info Article.">
+                </div>
+                <div>
+                    <h3 id="title1"></h3>
+                    <p id="p1"></p>
+                </div>
+            </article>
+        </a>
+        <a href="#template22">
+            <article class="article1" onclick="toTemplate22()">
+                <div> 
+                    <h5></h5><img class="img1" id="img2" src="#" alt="Info Article.">
+                </div>
+                <div>
+                    <h3 id="title2"></h3>
+                    <p id="p2"> </p>
+                </div>
+            </article>
+        </a>
+        <a href="#template23">
+            <article class="article1" onclick="toTemplate23()">
+                <div> 
+                    <h5></h5><img class="img1" id="img3" src="#" alt="Info Article.">
+                </div>
+                <div>
+                    <h3 id="title3"></h3>
+                    <p id="p3"> </p>
+                </div>
+            </article>
+        </a>
     </template>
         
-    <template id="template2">
-        <article class="article2"> 
-            <img class="img2" id="imgtemplate2" src="img/g.jpg" alt="Baja Info Article.">
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-                <a href="#" onclick="myFunction1();">Link to Template1</a>
+    <template id="template21">
+        <article class="article2" id="article21"> 
+            <img class="img2" id="img4" src="#" alt="Info Article.">
+            <h3 id="title4" ></h3>
+            <p id="p4"></p>
+                <a href="#template1" onclick="toTemplate1();">Link to Template1</a>
         </article>
-    </template>
-        
-    
-    
+    </template> 
 
+    <template id="template22">
+        <article class="article2" id="article22"> 
+            <img class="img2" id="img5" src="#" alt="Info Article.">
+            <h3 id="title5" ></h3>
+            <p id="p5"></p>
+                <a href="#template1" onclick="toTemplate1();">Link to Template1</a>
+        </article>
+    </template> 
 
+    <template id="template23">
+        <article class="article2" id="article23"> 
+            <img class="img2" id="img6" src="#" alt="Info Article.">
+            <h3 id="title6" ></h3>
+            <p id="p6"></p>
+                <a href="#template1" onclick="toTemplate1();">Link to Template1</a>
+        </article>
+    </template> 
 
-
-<script src="myscript.js"></script> 
+<script src="data.json"></script> 
+<script src="myscript.js"></script>  
 </body>
 
 </html>
