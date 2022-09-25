@@ -3,17 +3,17 @@
 //  meter element. Once the button has been pressed three times, it must not activate
 //  again.
 
- var addUp = (function() {
-   var count = 0;
+ let addUp = (function() {
+   let count = 0;
  
    return function () { 
-     var element = document.getElementById("usage");
-     if (element){
-      element.value = ++count;
-      counter.innerHTML = count;
-     } 
-     if (count==3){
-      document.querySelector('button').removeEventListener('click', addUp, false); 
+      let element = document.getElementById("usage");
+      if (element){
+          element.value = ++count;
+          counter.innerHTML = count;
+      } 
+      if (count==3){
+          document.querySelector('button').removeEventListener('click', addUp, false); 
       }
    }
  }());

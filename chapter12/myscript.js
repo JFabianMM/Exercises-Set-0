@@ -21,4 +21,3 @@ for (let i=0; i<attrNames.length; i++){
    let va=attrValues[i];   
    document.write(`${at} : ${va}` + "<br>");
 }
-

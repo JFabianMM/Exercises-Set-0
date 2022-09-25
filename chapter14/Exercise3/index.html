@@ -5,59 +5,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Baja Gallery</title>
+    <title>Gallery</title>
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body onload="myFunction3()">
-    
-    <div class="wrapper">
+<body> 
+    <div class="wrapper" id="wrapper" >     
+    </div>  
 
-    </div>
-
-    <template id="template1">
-        <article class="article1" onclick="myFunction2()">
-            <div> 
-            <img class="img1" src="img/e.jpg" alt="Baja Info Article.">
-            </div>
-            <div>
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-            </div>
-        </article>
-        <article class="article1" onclick="myFunction2()">
-            <div> 
-            <img class="img1" src="img/f.jpg" alt="Baja Info Article.">
-            </div>
-            <div>
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-            </div>
-        </article>
+    <template id="articleId1" >
+        <a class="a1" id="a1">
+            <article class="article1" id="article1">
+                <div class="div1"> 
+                     <h5 class="h5"></h5><img class="img1" id="img1" src="#" alt="Info Article.">
+                </div>
+                <div class="div1">
+                    <h3 class="title1" id="title1"></h3>
+                    <p class="p1" id="p1"></p>
+                </div>
+            </article>
+        </a>
     </template>
         
-    <template id="template2">
-        <article class="article2"> 
-            <img class="img2" id="imgtemplate2" src="img/g.jpg" alt="Baja Info Article.">
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-                <a href="#" onclick="myFunction1();">Link to Template1</a>
+    <template id="articleId2">
+        <article class="article2" id="article21"> 
+            <img class="img2" id="img4" src="#" alt="Info Article.">
+            <h3 id="title2" ></h3>
+            <p id="p2"></p>
+            <a class="a1" href="#articleId1" onclick="toTemplate1();">Link to Template1</a>
         </article>
-    </template>
-        
-    
-    
+    </template>  
 
 
 
-
-<script src="myscript.js"></script> 
+<script src="data.json"></script> 
+<script src="myscript.js"></script>  
 </body>
 
 </html>
