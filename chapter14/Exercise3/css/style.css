@@ -12,37 +12,46 @@ html {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #d4d3f2;
+    counter-reset: pics;
 }
 
+h5::before {
+    counter-increment: pics;
+    content: counter(pics);
+}
 
 .wrapper {
     width: 90%;
     margin: 0 auto;
 }
 
-
-.img1 {
-    width: 100%;
-    height:100%;
+#img1 {
+    width: 300px;
 }
+
+a:link { text-decoration: none; }
+
 
 .article1  {
     max-width: 1200px;
-    margin: 4rem center;
 }
+
 
 .article1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, auto);
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .article1 div {
     justify-content: center;
     justify-items: center;
     transition: 0.3s;
+}
+.article1 div p {
+   text-decoration: none;    
 }
 
 .article1 div:nth-child(1){
@@ -57,7 +66,11 @@ body {
 .img2 {
     float: left;
     padding: 15px; 
-    height: 300px;
     width: 300px;
   }
+
+  p, h3, h5 {
+    color: black;
+  }
+  
 
