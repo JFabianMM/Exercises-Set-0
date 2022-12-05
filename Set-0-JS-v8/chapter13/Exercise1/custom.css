@@ -1,0 +1,41 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.container {
+  background-color: rgb(134, 121, 237);
+  width:90%;
+  height: 440px;
+  margin:50px auto; 
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.container div {
+  border: 1px solid blue;
+  background-color: rgb(183, 196, 196);
+  height: 80px;
+  flex-basis: 18%;
+  text-align: center;
+  align-content: center;
+  line-height: 80px;
+}
+
+
+

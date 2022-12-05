@@ -1,0 +1,36 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d4d3f2;
+}
+
+
+h2 {
+  margin-left: 5%;
+}
+
+
+div {
+  width: 90%;
+  margin: 0rem auto;
+  justify-content: center;
+  justify-items: center;
+  gap: 10px;
+}
+
+p {
+  margin:0;
+  column-count:4;
+}
+
+
